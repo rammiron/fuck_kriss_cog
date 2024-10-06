@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 
 path = "counter.txt"
+kriss_id = 1203158269556822049
 mats_list_path = "mats.json"
 
 
@@ -45,7 +46,7 @@ class FuckKrissCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
-        if message.author.id != 1048600490562293850:
+        if message.author.id != kriss_id:
             return
         mats_in_message = False
         for mat in self.mats:
