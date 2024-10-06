@@ -15,7 +15,7 @@ class FuckKrissCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
-        if message.author.id != 1048600490562293850:
+        if message.author.id != 1203158269556822049:
             return
         mats_in_message = 0
         for mat in mats:
