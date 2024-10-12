@@ -3,9 +3,9 @@ import json
 import discord
 from discord.ext import commands
 
-path = "counter.txt"
+path = os.path.join(os.path.dirname(__file__), "counter.txt")
 kriss_id = 1203158269556822049
-mats_list_path = "mats.json"
+mats_list_path = os.path.join(os.path.dirname(__file__), "mats.json")
 
 
 class FuckKrissCog(commands.Cog):
