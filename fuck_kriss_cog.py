@@ -63,8 +63,7 @@ class FuckKrissCog(commands.Cog):
                 return
             else:
                 with open(path, "w+") as file:
-                    file.write(str(mats_in_message))
-
+                    file.write(str(1))
     @commands.slash_command(name="show_kriss_mats_count", description="Отображает"
                                                                       " количество сообщений с матом отправленных "
                                                                       "Криссом.")
